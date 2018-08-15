@@ -1,0 +1,19 @@
+# Template file for 'amdctl'
+pkgname=amdctl
+version=b66a7412e1340bda9fac7d7068535cef09c62b03
+revision=1
+build_style=gnu-makefile
+short_desc="Set P-State voltages and clock speeds on recent AMD CPUs on Linux"
+maintainer="malice <derpmalicious@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/kevinlekiller/amdctl"
+distfiles="https://github.com/kevinlekiller/amdctl/archive/${version}.tar.gz"
+checksum=36b322bd79f60812edd450d2ae4068c74d22901444242a5fe7f9c75cee43d5a2
+
+pre_build() {
+	export CFLAGS="$CFLAGS -lm"
+}
+
+do_install() {
+	vbin amdctl
+}
