@@ -1,0 +1,15 @@
+# Template file for 'amdmsrtweaker-lnx'
+pkgname=amdmsrtweaker-lnx
+version=8306f150b14ea79e5581bed167187470a94a505f
+revision=1
+build_style=gnu-makefile
+short_desc="Linux port of the AmdMsrTweaker program to adjust p-states for AMD 10h, 12h and 15h family processors"
+maintainer="malice <derpmalicious@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/johkra/amdmsrtweaker-lnx/tree/master"
+distfiles="https://github.com/johkra/amdmsrtweaker-lnx/archive/${version}.tar.gz"
+checksum=e41f70b5f756774c7dde83260a463c6987c89e3259df80f946f4420d18ea2a02
+
+do_install() {
+	vbin amdmsrt
+}
