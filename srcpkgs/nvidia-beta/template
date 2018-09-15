@@ -3,7 +3,7 @@
 _desc="NVIDIA drivers for linux (beta)"
 
 pkgname=nvidia-beta
-version=396.54
+version=396.54.05
 revision=1
 maintainer="malice <derpmalicious@gmail.com>"
 license="Proprietary NVIDIA license"
@@ -26,7 +26,8 @@ desc_option_glvnd="Add support for NVIDIA's GL Vendor Neutral Dispatch implement
 build_options_default="glvnd"
 
 _pkg="NVIDIA-Linux-x86_64-${version}"
-distfiles="http://uk.download.nvidia.com/XFree86/Linux-x86_64/${version}/${_pkg}.run"
+#distfiles="http://uk.download.nvidia.com/XFree86/Linux-x86_64/${version}/${_pkg}.run"
+distfiles=""
 checksum=7c3e3c9ca6aea31ad2613ef9cb6a4510d95d61b698f084e55adcc0611ee9eec3
 
 
