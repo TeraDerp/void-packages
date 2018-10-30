@@ -3,7 +3,7 @@
 _desc="NVIDIA drivers for linux (beta)"
 
 pkgname=nvidia-beta
-version=410.57
+version=410.66
 revision=1
 maintainer="malice <derpmalicious@gmail.com>"
 license="Proprietary NVIDIA license"
@@ -27,7 +27,7 @@ build_options_default="glvnd"
 
 _pkg="NVIDIA-Linux-x86_64-${version}"
 distfiles="http://uk.download.nvidia.com/XFree86/Linux-x86_64/${version}/${_pkg}.run"
-checksum=5c3c2e1fef0615c0002946c586c815a77676f4683304cc17d5bf323e7626a320
+checksum=8fb6ad857fa9a93307adf3f44f5decddd0bf8587a7ad66c6bfb33e07e4feb217
 
 
 subpackages="nvidia-beta-opencl nvidia-beta-libs"
