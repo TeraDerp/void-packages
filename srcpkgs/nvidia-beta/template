@@ -3,7 +3,7 @@
 _desc="NVIDIA drivers for linux (beta)"
 
 pkgname=nvidia-beta
-version=410.66
+version=415.18
 revision=1
 maintainer="malice <derpmalicious@gmail.com>"
 license="Proprietary NVIDIA license"
@@ -27,8 +27,7 @@ build_options_default="glvnd"
 
 _pkg="NVIDIA-Linux-x86_64-${version}"
 distfiles="http://uk.download.nvidia.com/XFree86/Linux-x86_64/${version}/${_pkg}.run"
-checksum=8fb6ad857fa9a93307adf3f44f5decddd0bf8587a7ad66c6bfb33e07e4feb217
-
+checksum=585d52015208b550170dce86d93657804ed52d7abab46510ae972fdf611e8650
 
 subpackages="nvidia-beta-opencl nvidia-beta-libs"
 if [ "$XBPS_TARGET_MACHINE" != "i686" ]; then
@@ -136,7 +135,7 @@ do_install() {
 	ln -sf libGLESv2_nvidia.so.${version} ${DESTDIR}/usr/lib/libGLESv2_nvidia.so.2
 
 	# Thread Local Storage
-	vinstall tls/libnvidia-tls.so.${version} 755 usr/lib
+	vinstall libnvidia-tls.so.${version} 755 usr/lib
 
 	# VDPAU
 	vinstall libvdpau_nvidia.so.${version} 755 usr/lib/vdpau
