@@ -143,6 +143,7 @@ libnvidia-glsi.so.346.72 nvidia-libs-346.72_1 ignore
 libnvidia-fatbinaryloader.so.390.87 nvidia-libs-390.87_1 ignore
 libnvidia-fatbinaryloader.so.390.77 nvidia-libs-390.77_1 ignore
 libnvidia-fatbinaryloader.so.410.66 nvidia-beta-libs-410.66_1 ignore
+libnvidia-fatbinaryloader.so.415.18 nvidia-beta-libs-415.18_1 ignore
 libnvidia-fatbinaryloader.so.396.54 nvidia-beta-libs-396.54_1 ignore
 libglapi.so.0 libglapi-7.11_1
 libgbm.so.1 libgbm-9.0_1
